@@ -24,4 +24,5 @@ h2{
 .certs{
     text-decoration: underline; 
     font-style: italic;
+    text-align: right;
 }
