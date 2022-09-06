@@ -30,7 +30,7 @@ function displayVisitCount(){
     })  
     .then((response) => response.json())
     .then((response) => {
-        count_element.innerHTML = response[0]
+        count_element.innerHTML = response
     });
 }
 updateVisitCount();
