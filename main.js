@@ -6,8 +6,11 @@ const data = {'body':'visit_count'}
 function updateVisitCount(){
     fetch(increment_count,{
         method: 'PUT',
+        statusCode: 200,
         headers: {
             'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin' : '*',
+            "Access-Control-Allow-Credentials" : true
         },
         body : JSON.stringify(data),
         })
@@ -17,7 +20,14 @@ function updateVisitCount(){
  
 function displayVisitCount(){
 
-    fetch(get_visit_count_URL)
+    fetch(get_visit_count_URL,{
+        method: 'GET',
+        statusCode: 200,
+        headers: {
+            'Access-Control-Allow-Origin' : '*',
+            "Access-Control-Allow-Credentials" : true
+        },
+    })  
     .then((response) => response.json())
     .then((response) => {
         count_element.innerHTML = response[0]
