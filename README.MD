@@ -9,5 +9,5 @@
 # Additional Features
 
 ## Javascript Counter
-    At the bottom of the page is an atomic counter made with HTML and Javascript. The Javascript code gets an element on the HTML document and increments the count in the DynamoDB database and then displays that count on page load. 
+At the bottom of the page is an atomic counter made with HTML and Javascript. The Javascript code gets an element on the HTML document and increments the count in the DynamoDB database and then displays that count on page load. 
 
